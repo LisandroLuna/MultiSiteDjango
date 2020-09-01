@@ -3,7 +3,6 @@ from pathlib import Path
 from secrets import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-from arcticMonkeys import secrets
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
@@ -12,7 +11,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = secrets.getsecret()
+SECRET_KEY = '204vz^c4wz^d)@l0*tg0)%1*wgr9s1^vg)5_mx$oypy#s7)-h7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -24,6 +23,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'web.apps.WebConfig',
+    'djecrety',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
