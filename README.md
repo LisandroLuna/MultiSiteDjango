@@ -1,11 +1,13 @@
 # Arctic Monkeys - Pagina Tributo
 Sitio web tributo de Arctic Monkeys con Django.
 
+Deploy funcional en Heroku
+
 ## Cambiar Secret Key
 
 Luego de instalar correr:
 
-```python manage.py djecrety -d testproject```
+```python manage.py djecrety -d arcticMonkeys```
 
 ### Requisitos
 
