@@ -1,0 +1,90 @@
+@media (max-width: 575.98px) {
+    a {
+        color: #343a40;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    a .active{
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .imgdisk{
+        width: 50%;
+    }
+    .top-marg{
+        margin-top: 4rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    a {
+        color: #343a40;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    a .active{
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .imgdisk{
+        width: 50%;
+    }
+    .top-marg{
+        margin-top: 4rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    a {
+        color: #343a40;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    a .active{
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .imgdisk{
+        width: 50%;
+    }
+    .top-marg{
+        margin-top: 4rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    a {
+        color: #343a40;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    a .active{
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .imgdisk{
+        width: 50%;
+    }
+    .top-marg{
+        margin-top: 4rem;
+    }
+}
+@media (min-width: 1200px) {
+    a {
+        color: #343a40;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    a .active{
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .imgdisk{
+        width: 50%;
+    }
+    .top-marg{
+        margin-top: 4rem;
+    }
+}

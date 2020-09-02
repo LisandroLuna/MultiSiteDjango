@@ -1,14 +1,21 @@
 {% extends "web/base.html" %}
 {% block body %}
-    <div class="container">
+    <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
         <div class="row">
-            <h1 class="display-3">Arctic Monkeys - Tribute Page</h1>
-            <div class="col-8">
+            <div class="col-12">
+                <h1 class="display-5">Arctic Monkeys - Tribute Page</h1>
+            </div>
+            <div class="col-9 mt-3">
                 {% load static %}
                 <img src="{% static "web/img/arctic-monkeys-head.jpg" %}" class="img-fluid" alt="Arctic Monkeys">
                 <p class="lead"> Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
             </div>
-            <div class="col-4">
+            <div class="col-3 mt-3">
                 <blockquote class="blockquote text-right">
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <footer class="blockquote-footer text-right">Someone famous in <cite title="Source Title">Source Title</cite></footer>
