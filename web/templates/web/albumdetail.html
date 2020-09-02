@@ -1,9 +1,9 @@
 {% extends "web/base.html" %}
 {% block body %}
-    <div class="container-fluid">
+    <div class="container-fluid mb-3">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
             <li class="breadcrumb-item"><a href="{% url 'albums' %}">Albums</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ album.title }}</li>
           </ol>
@@ -12,7 +12,7 @@
             <div class="col-12">
                 <h1 class="display-5">{{ album.title }}</h1>
             </div>
-            <div class="col-8 mt-3">
+            <div class="col-9 mt-3">
                 <div class="media">
                     <img src="{{ album.img }}" class="align-self-start mr-3 imgdisk" alt="{{ album.title }}">
                     <div class="media-body">
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 text-justify mt-3">
+            <div class="col-3 text-justify mt-3">
                 <p>{{ album.desc }}</p>
             </div>
         </div>

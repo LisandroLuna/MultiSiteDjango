@@ -1,25 +1,37 @@
 {% extends "web/base.html" %}
 {% block body %}
-    <div class="container-fluid">
+    <div class="container-fluid mb-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item active" aria-current="page">Home</li>
+              <li class="breadcrumb-item active" aria-current="page">Inicio</li>
             </ol>
         </nav>
         <div class="row">
             <div class="col-12">
-                <h1 class="display-5">Arctic Monkeys - Tribute Page</h1>
+                <h1 class="display-5">Arctic Monkeys - Pagina Tributo</h1>
             </div>
-            <div class="col-9 mt-3">
+            <div class="col-7 mt-3">
                 {% load static %}
                 <img src="{% static "web/img/arctic-monkeys-head.jpg" %}" class="img-fluid" alt="Arctic Monkeys">
-                <p class="lead"> Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                <p class="lead"> Arctic Monkeys</p>
             </div>
-            <div class="col-3 mt-3">
-                <blockquote class="blockquote text-right">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer text-right">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                </blockquote>
+            <div class="col-5 mt-4">
+                <p class="text-justify">Arctic Monkeys es un grupo de Sheffield (Inglaterra) formado en sus orígenes por el guitarrista, cantante y principal compositor Alex Turner (nacido el 6 de enero de 1986), el guitarrista Jamie Cook (nacido el 8 de julio de 1985), el bajista Andy Nicholson y el batería Matt Helders (nacido el 7 de mayo de 1986).</p>
+                <p class="text-justify">Esta formación debutó en disco en el sello Bang Bang Recordings con el EP “Five Minutes With Arctic Monkeys” (2005), en donde incluyeron el tema “Fake Tales Of San Francisco”.</p>
+                <p class="text-justify">La revista New Musical Express, siempre deseosa de encontrar en su tierra a la pieza clave del rock del momento, recibió con júbilo los sonidos angulares y dinámicos con enfoque de baile y los riffs incisivos de guitarra de un conjunto británico tan influenciado por el garage pop y la psicodelia de los 60 como por el brit pop de Oasis y Blur, el pop punk, el funk, el post-punk y la new wave.</p>
+            </div>
+            <div class="col-6 mt-3">
+                <p class="text-justify">En el año 2006 editaron en Domino un nuevo EP, “Who The Fuck Are Arctic Monkeys?”, preludio de su primer disco grande, “Whatever People Say I Am, That’s What I’m Not”, un trabajo producido por Jim Abbys y Alan Smyth en el que ya aparecía como miembro oficial del grupo Nick O’Malley (nacido el 5 de julio de 1985), quien sustituyó a Nicholson en el bajo.</p>
+                <p class="text-justify">La promoción de los mass media británicos y el éxito de temas como “The View From Afternoon” o “I Bet You Look Good On The Danceflor” convirtieron al grupo en un fenómeno mundial de un rock saturado de bandas con huellas de la new wave y el post-punk.</p>
+                <p class="text-justify">Un año después, James Ford y Mike Crossey produjeron el segundo álbum en estudio de Arctic Monkeys, “Favourite Worst Nightmare” (2007), disco con canciones como “D Is For Dangerous”, “Fluorescente Adolescent” o “Brainstorm”.</p>
+                <p class="text-justify">Un año después de la edición de este último trabajo, Turner creó junto a Miles Kane, miembro del grupo The Rascals, un dúo llamado The Last Shadow Puppets, con unas composiciones tendentes hacia sonidos con mayor ascendencia 60’s que las ofertadas con los Arctic Monkeys. El productor James Ford también participó en este proyecto que publicó el disco homónimo en el año 2008.</p>
+                <p class="text-justify">Alex Turner volvió a liderar a los Arctic Monkeys para grabar “Humbug” (2009), un disco presentado con el single “Crying Lightning” que, revelando con su presencia una mayor querencia psicodélica, contó con la colaboración de Josh Homme (Queen Of The Stone Age) en una producción en la que también participó James Ford.</p>
+                <p class="text-justify">En el 2011 apareció un nuevo disco en estudio titulado “Suck It And See” (2011), esta entrega es una minucia de base pop-rock con ascendencias del britpop, Bowie, la lisergia 60s, los Smiths, el post-punk.</p>
+                <p class="text-justify">Dos años después se publicó  “AM” (2013). AM un álbum con influencias blues rock, hard rock, funk, glam rock… y textos en torno a ansias y dependencias sexuales-amorosas y/o correrías nocturnas varias.</p>
+                <p class="text-justify">Su último álbum en estudio es “Tranquility Base Hotel + Casino” (2018). Alex Turner establecido en la luna como crooner de una banda pop lounge. Este parece el concepto del ambicioso álbum “Tranquility Base Hotel & Casino”, un arriesgado trabajo que se aleja en su sonido de las propuestas previas del grupo británico Arctic Monkeys. Aquí, en tempos tranquilos, hay influencias lounge, glam, soul-funk, art pop… con textos sesudos, abstractos, que singularizan la capacidad como autor de Turner.</p>
+            </div>
+            <div class="col-6 mt-3">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pK7egZaT3hs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
