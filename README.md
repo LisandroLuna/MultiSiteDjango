@@ -7,13 +7,31 @@ Online: https://am-pagina-tributo.herokuapp.com/
 
 Luego de instalar correr:
 
-```python manage.py djecrety -d arcticMonkeys```
+&nbsp; ```python manage.py djecrety```
 
-Con la secret key generada, la copiamos y agregamos en este comando
+Nos va a generar una nueva SECRET_KEY, procedemos a copiarla.
 
-```heroku config:set SECRET_KEY="SECRET_KEY"```
+El valor de SECRET_KEY debe guardarse como variable de entorno.
 
-Y lo ejecutamos en heroku.
+* Windows10
+
+&nbsp; ``` setx SECRET_KEY "VALOR OBTENIDO DEL COMANDO DJECRETY" ```
+
+* Linux Debian/Ubuntu
+
+&nbsp; ``` sudo nano /etc/environment ```
+
+&nbsp; Al final del archivo agregamos:
+
+``` SECRET_KEY = "VALOR OBTENIDO DEL COMANDO DJECRETY" ```
+
+* Heroku CLI
+
+&nbsp; ``` heroku config:set SECRET_KEY="VALOR OBTENIDO DEL COMANDO DJECRETY" ```
+
+Con esto ya estammos listos para correr nuestra instalacion.
+
+El usuario administrador es 'monkeyadm', sus credenciales se pueden reiniciar desde la consola.
 
 ### Requisitos
 
