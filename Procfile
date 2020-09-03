@@ -1,1 +1,1 @@
-web: gunicorn arcticMonkeys.wsgi --log-file -
+web: python manage.py runserver 80
