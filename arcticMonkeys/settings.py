@@ -12,10 +12,10 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
-if DEBUG==True:
-    SECRET_KEY = os.getenv('SECRET_KEY')
-else:
+if DEBUG:
     SECRET_KEY = 'tb%z&y3ybdqirrv@^e&jql!nh&&p5n0ce=u*g8xhkim=49ma@t'
+else:
+    SECRET_KEY = os.getenv('SECRET_KEY')
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
