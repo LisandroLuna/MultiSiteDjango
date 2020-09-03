@@ -1,7 +1,9 @@
 # Arctic Monkeys - Pagina Tributo
 Sitio web tributo de Arctic Monkeys con Django.
 
-Deploy funcional en Heroku
+Deploy funcional en Heroku, una vez hecho el deploy correr el siguiente comando en el CLI de Heroku:
+
+```heroku ps:scale web=1```
 
 ## Cambiar Secret Key
 
