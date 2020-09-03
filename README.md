@@ -9,6 +9,12 @@ Luego de instalar correr:
 
 ```python manage.py djecrety -d arcticMonkeys```
 
+Con la secret key generada, la copiamos y agregamos en este comando
+
+```heroku config:set SECRET_KEY="SECRET_KEY"```
+
+Y lo ejecutamos en heroku.
+
 ### Requisitos
 
 ```asgiref==3.2.10
