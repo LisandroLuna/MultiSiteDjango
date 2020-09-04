@@ -1,7 +1,15 @@
-# Arctic Monkeys - Pagina Tributo
-Sitio web tributo de Arctic Monkeys con Django.
+# Multi Site Django
 
-Online: https://am-pagina-tributo.herokuapp.com/
+Proyecto Django con varias aplicaciones para mostrar diferentes habilidades.
+
+Disponibles:
+
+* ```/amsite``` Pagina tributo AM.
+nbsp; Sitio basico. Modelos: Album y Song.
+
+* ```/api``` API REST, proximamente disponible...
+
+* ```/apisite``` Sitio que consume a la API ya mencionada, proximamente disponible...
 
 ## Cambiar Secret Key
 

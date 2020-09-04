@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('web', '0003_album_year'),
+        ('amsite', '0003_album_year'),
     ]
 
     operations = [

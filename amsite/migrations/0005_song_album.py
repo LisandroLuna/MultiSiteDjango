@@ -7,13 +7,13 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('web', '0004_song'),
+        ('amsite', '0004_song'),
     ]
 
     operations = [
         migrations.AddField(
             model_name='song',
             name='album',
-            field=models.ForeignKey(default=0, on_delete=django.db.models.deletion.CASCADE, to='web.album'),
+            field=models.ForeignKey(default=0, on_delete=django.db.models.deletion.CASCADE, to='amsite.album'),
         ),
     ]

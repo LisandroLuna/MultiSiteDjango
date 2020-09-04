@@ -2,16 +2,16 @@ from django.shortcuts import render
 from .models import Album
 
 
-def index(request):
-    """The home page for web"""
-    return render(request, 'web/home.html')
+def amsite(request):
+    """The home page for amsite"""
+    return render(request, 'amsite/home.html')
 
 
 def albums(request):
     """The albums page"""
     albums = Album.objects.order_by('year')
     context = {'albums': albums}
-    return render(request, 'web/albums.html', context)
+    return render(request, 'amsite/albums.html', context)
 
 
 def albumdetail(request, album_id):
@@ -19,5 +19,5 @@ def albumdetail(request, album_id):
     album = Album.objects.get(id=album_id)
     songs = album.song_set.order_by('id')
     context = {'album': album, 'songs': songs}
-    return render(request, 'web/albumdetail.html', context)
+    return render(request, 'amsite/albumdetail.html', context)
 
