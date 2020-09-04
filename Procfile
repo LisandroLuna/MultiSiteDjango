@@ -1,1 +1,1 @@
-web: gunicorn arcticMonkeys.wsgi --log-file -
+web: gunicorn sitemanager.wsgi --log-file -
