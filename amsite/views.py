@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+
+from .forms import AlbumForm
 from .models import Album
 
 
@@ -20,4 +22,19 @@ def albumdetail(request, album_id):
     songs = album.song_set.order_by('id')
     context = {'album': album, 'songs': songs}
     return render(request, 'amsite/albumdetail.html', context)
+
+def newalbum(request):
+    """Add new album."""
+    if request.method != 'POST':
+    # No data submitted; create a blank form.
+        form = AlbumForm()
+    else:
+    # POST data submitted; process data.
+        form = AlbumForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('albums')
+    # Display a blank or invalid form
+    context = {'form': form}
+    return render(request, 'amsite/newalbum.html', context)
 

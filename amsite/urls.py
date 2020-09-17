@@ -9,5 +9,7 @@ urlpatterns = [
     path('albums/', views.albums, name='albums'),
     # Detail page for a single album
     path('albumdetail/<int:album_id>/', views.albumdetail, name='albumdetail'),
+    # Adding new album
+    path('newalbum/', views.newalbum, name='newalbum'),
 ]
 
