@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -8,7 +9,7 @@ class Album(models.Model):
     img = models.CharField(max_length=100,
                            default='https://www.generationsforpeace.org/wp-content/uploads/2018/03/empty.jpg')
     year = models.CharField(max_length=5, default='0000')
-
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
     def __str__(self):
         return self.title
 
