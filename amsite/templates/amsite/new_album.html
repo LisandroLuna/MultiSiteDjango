@@ -1,9 +1,9 @@
-{% extends "amsite/basealbum.html" %}
+{% extends "amsite/base_album.html" %}
 {% block body %}
     <div class="container-fluid mb-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'startsite:index' %}">Inicio</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Albums</li>
             </ol>
         </nav>
@@ -12,10 +12,10 @@
                 <h1 class="display-5">Crear Album</h1>
                 <br>
                 <div class="row row-cols-1 row-cols-md-3 ml-3">
-                    <form action="{% url 'newalbum' %}" method ="POST">
+                    <form action="{% url 'amsite:newalbum' %}" method ="POST">
                         {%  csrf_token %}
                         {{ form.as_p }}
-                        <button name="submit">Crear Album</button>
+                        <button type="button" class="btn btn-success" name="submit">Crear Album</button>
                     </form>
                 </div>
             </div>

@@ -5,7 +5,7 @@ Proyecto Django con varias aplicaciones para mostrar diferentes habilidades.
 Disponibles:
 
 * ```/amsite``` Pagina tributo AM.
-nbsp; Sitio basico. Modelos: Album y Song.
+nbsp; Sitio con CRUD de Albums y Canciones.
 
 * ```/api``` API REST, proximamente disponible...
 

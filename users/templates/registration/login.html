@@ -1,0 +1,15 @@
+{% extends "amsite/base.html" %}
+{% block body %}
+
+{% if form.errors %}
+    <p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+<form class="text-center p-5" method="post" action="{% url 'users:login' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-success" name="submit">Entrar</button>
+    <input type="hidden" name="next" value="{% url 'amsite:amsite' %}" />
+</form>
+
+{% endblock body %}

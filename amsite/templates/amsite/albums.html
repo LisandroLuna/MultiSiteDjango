@@ -1,16 +1,16 @@
-{% extends "amsite/basealbum.html" %}
+{% extends "amsite/base_album.html" %}
 {% block body %}
     <div class="container-fluid mb-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'amsite:amsite' %}">Inicio</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Albums</li>
             </ol>
         </nav>
         <div class="row">
             <div class="col-md-12">
                 <h1 class="display-5">Albums</h1>
-                <p><a href="{% url 'newalbum' %}">Crear Album</a></p>
+                <p><a href="{% url 'amsite:newalbum' %}">Crear Album</a></p>
                 <br>
                 <div class="row row-cols-1 row-cols-md-3">
                     {%  for album in albums %}
@@ -20,7 +20,7 @@
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">{{ album.title }}</h5>
                                 <p class="card-text">{{ album.desc|truncatewords:":55" }}...</p>
-                                <a title="{{ album.title }}" href="{% url 'albumdetail' album.id %}" class="btn btn-primary stretched-link mt-auto">Ver Más..</a>
+                                <a title="{{ album.title }}" href="{% url 'amsite:albumdetail' album.id %}" class="btn btn-primary stretched-link mt-auto">Ver Más..</a>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">{{ album.year }}</small>

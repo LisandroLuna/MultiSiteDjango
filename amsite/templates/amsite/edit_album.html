@@ -1,0 +1,26 @@
+{% extends "amsite/base_album.html" %}
+{% block body %}
+    <div class="container-fluid mb-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'startsite:index' %}">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Albums</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-5">Editar Album</h1>
+                <br>
+                <p class="lead"><a href="{% url 'amsite:albumdetail' album.id %}">{{ album }}</a></p>
+                <div class="row row-cols-1 row-cols-md-3 ml-3">
+                    <form action="{% url 'amsite:editalbum' album.id %}" method ="POST">
+                        {%  csrf_token %}
+                        {{ form.as_p }}
+                        <button class="btn btn-success" name="submit">Editar Album</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+

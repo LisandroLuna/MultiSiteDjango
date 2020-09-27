@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
 if DEBUG:
@@ -22,8 +22,9 @@ ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'startsite.apps.StartsiteConfig',
-    'amsite.apps.AmSiteConfig',
+    'startsite',
+    'amsite',
+    'users',
     'djecrety',
     'django.contrib.admin',
     'django.contrib.auth',
